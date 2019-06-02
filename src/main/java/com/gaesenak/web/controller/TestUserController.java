@@ -13,12 +13,13 @@ public class TestUserController {
     @Autowired
     TestUserService testUserService;
 
-    @RequestMapping("/index.html")
-    private void getUserList() throws Exception {
+    @RequestMapping("/")
+    private String getUserList() throws Exception {
         List<TestUser>users = testUserService.getUserList();
 
         for(int i = 0; i < users.size(); i++) {
             System.out.println(users.get(i).toString());
         }
+        return "index";
     }
 }
