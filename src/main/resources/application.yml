@@ -9,3 +9,7 @@ spring:
     url: jdbc:mysql://localhost:3306/{db명}?useSSL=false
     username:
     password: 
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
