@@ -12,7 +12,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@MapperScan(value = {"com.gaesenak.web.mapper.TestUserMapper"})
+@MapperScan(basePackages = "com.gaesenak.web.mapper")
 public class WebApplication {
 
     public static void main(String[] args) {

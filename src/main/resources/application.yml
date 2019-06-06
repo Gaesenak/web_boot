@@ -18,3 +18,11 @@ spring:
   resources:
     static-locations: classpath:/static/
     add-mappings: true
+
+  devtools:
+    livereload:
+      enabled: true
+    # 실제 배포시 제거해야 함
+    freemarker:
+      cache: false
+    # /실제 배포시 제거해야 함
