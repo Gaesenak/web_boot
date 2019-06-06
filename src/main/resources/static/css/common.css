@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+/* font */
+@font-face {
+	font-family: 'nanum';
+	src: url('../font/nanumbarunpenr.woff2') format('woff2'),url('../font/nanumbarunpenr.woff') format('woff');
+	font-weight: normal;
+	font-style: normal
+}
+* {
+	font-family: 'nanum', sans-serif;
+	font-size: 17px;
+}
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -24,7 +35,6 @@ time, mark, audio, video {
 	padding:0;
 	border:0;
 	outline:0;
-	font-size:100%;
 	vertical-align:baseline;
 	background:transparent;
 }
@@ -105,16 +115,4 @@ input, select {
 
 button {
 	outline: none;
-}
-
-/* font */
-@font-face {
-	font-family: 'nanum';
-	src: url('../font/nanumbarunpenr.woff2') format('woff2'),url('../font/nanumbarunpenr.woff') format('woff');
-	font-weight: normal;
-	font-style: normal
-}
-* {
-	font-family: 'nanum', sans-serif;
-	font-size: 17px;
 }
