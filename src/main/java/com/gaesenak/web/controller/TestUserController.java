@@ -17,8 +17,8 @@ public class TestUserController {
     private String getUserList() throws Exception {
         List<TestUser>users = testUserService.getUserList();
 
-        for(int i = 0; i < users.size(); i++) {
-            System.out.println(users.get(i).toString());
+        for (TestUser user : users) {
+            System.out.println(user.toString());
         }
         return "index";
     }
