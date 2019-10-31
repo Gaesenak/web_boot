@@ -21,6 +21,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     compile("org.springframework.boot:spring-boot-starter-jdbc:2.0.1.RELEASE")
@@ -32,5 +33,9 @@ dependencies {
     compile('javax.servlet:jstl')
     compile("org.apache.tomcat.embed:tomcat-embed-jasper")
 
+	compile ("org.apache.tiles:tiles-jsp:3.0.7")
+	compile ("org.apache.tiles:tiles-core:3.0.7")
+	compile ("org.apache.tiles:tiles-servlet:3.0.7")		
+	
     compileOnly('org.projectlombok:lombok')
 }
