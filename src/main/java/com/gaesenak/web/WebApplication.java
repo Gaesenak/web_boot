@@ -10,6 +10,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 import javax.sql.DataSource;
+import java.util.Objects;
 
 @SpringBootApplication
 @MapperScan(basePackages = "com.gaesenak.web.mapper")
@@ -32,7 +33,7 @@ public class WebApplication {
         Resource[] arrResource = new PathMatchingResourcePatternResolver()
                 .getResources("classpath:mapper/*Mapper.xml");
         sessionFactory.setMapperLocations(arrResource);
-        sessionFactory.getObject().getConfiguration().setMapUnderscoreToCamelCase(true);
+        Objects.requireNonNull(sessionFactory.getObject()).getConfiguration().setMapUnderscoreToCamelCase(true);
 
         return sessionFactory.getObject();
 
